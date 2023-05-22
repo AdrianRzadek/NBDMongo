@@ -1,0 +1,9 @@
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.csproj.AssemblyReference.cache
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.AssemblyInfoInputs.cache
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.AssemblyInfo.cs
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.csproj.CoreCompileInputs.cache
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.RazorAssemblyInfo.cache
+C:\Users\adria\Dokumenty\GitHub\NBDMongo\MongoNBD\obj\Debug\net6.0\MongoNBD.RazorAssemblyInfo.cs

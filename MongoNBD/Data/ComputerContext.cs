@@ -10,7 +10,7 @@ namespace MongoNBD.Data
     {
         IMongoDatabase database;
         IGridFSBucket gridFS;
-        public ComputerContext(IOptions<> mongoDbSet)
+        public ComputerContext(IOptions<MongoDbSet> mongoDbSet)
  
                     
 	        {

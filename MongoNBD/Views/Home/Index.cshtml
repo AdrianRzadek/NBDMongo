@@ -1,8 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model MongoNBD.Models.ComputerList;
+@{
+    ViewData["Title"] = "Computers";
+    Layout = "~/Views/Shared/_layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Computer List</h2>
+@using (Html.BeginForm())
+{
+    <label for="Computername">Search by computer name</label>
+    <input type="text" name="ComputerName" value="@Model.Filter.ComputerName"/>
+    <label for="Year">Search by year</label>
+    <input type="text" name="Year" value="@Model.Filter.Year" />
+    <input type="submit" value="Search"/>
+
+}
+
+<p>
+    @Html.ActionLink("Add","Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Model</th>
+        <th>Year</th>
+    <th></th>
+    
+    </tr>
+
+    @foreach(var computer in Model.Computers)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>computer.Name)</td>
+            <td>@Html.DisplayFor(modelItem=>computer.Year)</td>
+            <td>@Html.ActionLink("Change","Edit", new{id=computer.Id})|
+                @Html.ActionLink("Delete","Delete", new{id=computer.Id})|
+                @Html.ActionLink("Add image","AttachImage", new{id=computer.Id})
+            
+            
+            
+            </td>
+        </tr>
+    }
+
+
+</table>

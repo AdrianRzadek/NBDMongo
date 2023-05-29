@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5FV1ASpsaPiIcvkw+4pbmDB4OqXuMlRw5gL1YhPwVUZ2RQYZV/JiYEU6H/1QHdfWyS0FR8kAtnIcd3XPloCM8A==",
+  "dgSpecHash": "rzcqRGK2bI0dBt1Jlcb22e1y7M9n3ae5xn5WJQVPsYmMXRl9dmK5Yf9uEFQhrc4rfa7sxM3D5mFtTf0tSlswdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\adria\\Dokumenty\\GitHub\\NBDMongo\\MongoNBD\\MongoNBD.csproj",
   "expectedPackageFiles": [
@@ -82,10 +82,10 @@
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\mongodb.bson\\2.19.1\\mongodb.bson.2.19.1.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver\\2.19.1\\mongodb.driver.2.19.1.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver.core\\2.19.1\\mongodb.driver.core.2.19.1.nupkg.sha512",
-    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver.gridfs\\2.19.1\\mongodb.driver.gridfs.2.19.1.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\mongodb.bson\\2.19.2\\mongodb.bson.2.19.2.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver\\2.19.2\\mongodb.driver.2.19.2.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver.core\\2.19.2\\mongodb.driver.core.2.19.2.nupkg.sha512",
+    "C:\\Users\\adria\\.nuget\\packages\\mongodb.driver.gridfs\\2.19.2\\mongodb.driver.gridfs.2.19.2.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\mongodb.libmongocrypt\\1.7.0\\mongodb.libmongocrypt.1.7.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

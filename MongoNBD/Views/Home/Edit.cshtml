@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+}
+
+@model MongoNBD.Models.Computers
+
+<h2>Edytuj</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        @Html.ValidationSummary(true)
+        <div>
+            @Html.LabelFor(model => model.Name)
+            <div>
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model=>model.Year)
+            <div>
+                @Html.EditorFor(model => model.Year)
+                @Html.ValidationMessageFor(model => model.Year)
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Edytuj" />
+        </div>
+    </div>
+}

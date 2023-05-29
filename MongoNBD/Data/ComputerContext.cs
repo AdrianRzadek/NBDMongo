@@ -28,14 +28,14 @@ namespace MongoNBD.Data
 
          public async Task<IEnumerable<Computers>> GetComputers(int? year, string name)
          {
-var builder = new FilterDefinitionBuilder<Computers>();
-var filter = builder.Empty;
+            var builder = new FilterDefinitionBuilder<Computers>();
+            var filter = builder.Empty;
 
              if (!string.IsNullOrWhiteSpace(name))
-filter = filter & builder.Regex("Name", new BsonRegularExpression(name));
+                filter = filter & builder.Regex("Name", new BsonRegularExpression(name));
 
              if (year.HasValue)
-filter = filter & builder.Eq("Year", year.Value);
+                filter = filter & builder.Eq("Year", year.Value);
 
              return await Computers.Find(filter).ToListAsync();
          }
@@ -50,16 +50,16 @@ filter = filter & builder.Eq("Year", year.Value);
          public async Task<Byte[]> GetImage(string id) => await gridFS.DownloadAsBytesAsync(new ObjectId(id));
          public async Task StoreImage(string id, Stream imageStream, string imageName)
         {
-var computers = await GetComputer(id);
+            var computers = await GetComputer(id);
              if (computers.HasImage())
-await gridFS.DeleteAsync(new ObjectId(computers.ImageId));
-var imageId = await gridFS.UploadFromStreamAsync(imageName, imageStream);
-computers.ImageId = imageId.ToString();
+            await gridFS.DeleteAsync(new ObjectId(computers.ImageId));
+            var imageId = await gridFS.UploadFromStreamAsync(imageName, imageStream);
+            computers.ImageId = imageId.ToString();
 
-var filter = Builders<Computers>.Filter.Eq("_id", new ObjectId(computers.Id));
-var update = Builders<Computers>.Update.Set("ImageId", computers.ImageId);
+            var filter = Builders<Computers>.Filter.Eq("_id", new ObjectId(computers.Id));
+            var update = Builders<Computers>.Update.Set("ImageId", computers.ImageId);
 
-await Computers.UpdateOneAsync(filter, update);
+            await Computers.UpdateOneAsync(filter, update);
          }
      }
  }

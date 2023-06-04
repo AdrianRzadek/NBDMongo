@@ -22,6 +22,7 @@
     <tr>
         <th>Model</th>
         <th>Year</th>
+        <th>Picture</th>
         <th>Option</th>
     <th></th>
     
@@ -34,8 +35,8 @@
             <td>@Html.DisplayFor(modelItem=>computer.Year)</td>
             <td><img src="data:image/jpeg;base64, @computer.Image" width="50" height="70"></img></td>
             <td>@Html.ActionLink("Change","Edit", new{id=computer.Id})|
-                @Html.ActionLink("Delete","Delete", new{id=computer.Id})|
-                @Html.ActionLink("Add image","AttachImage", new{id=computer.Id})
+                @Html.ActionLink("Delete","Delete", new{id=computer.Id})
+                @* @Html.ActionLink("Add image","AttachImage", new{id=computer.Id})*@
                 
             
             

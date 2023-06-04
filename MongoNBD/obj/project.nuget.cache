@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rzcqRGK2bI0dBt1Jlcb22e1y7M9n3ae5xn5WJQVPsYmMXRl9dmK5Yf9uEFQhrc4rfa7sxM3D5mFtTf0tSlswdg==",
+  "dgSpecHash": "OuDLdKA+Uir9mEvzrJND+epo8YSaDnxeziT+Gpfp+wp5UveJ38+8aCFXdFGj/kBEWBmXtZJFQAa9pWxxviDPqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\Dokumenty\\GitHub\\NBDMongo\\MongoNBD\\MongoNBD.csproj",
+  "projectFilePath": "C:\\Users\\adria\\Documents\\GitHub\\NBDMongo\\MongoNBD\\MongoNBD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

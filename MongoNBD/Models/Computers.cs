@@ -12,7 +12,7 @@ namespace MongoNBD.Models
         public string? Name { get; set; }   
         [Display(Name="Creation year")]
         public int? Year { get; set; }  
-        public string? ImageId { get; set; }
-        public bool HasImage()=> !string.IsNullOrWhiteSpace(ImageId);
+        public string? Image { get; set; }
+       // public bool HasImage()=> !string.IsNullOrWhiteSpace(Image);
     }
 }

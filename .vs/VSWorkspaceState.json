@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MongoNBD",
+    "\\MongoNBD\\Controllers",
+    "\\MongoNBD\\Models",
+    "\\MongoNBD\\Views",
+    "\\MongoNBD\\Views\\Home"
+  ],
+  "SelectedNode": "\\MongoNBD\\Views\\Home\\Create.cshtml",
+  "PreviewInSolutionExplorer": false
+}

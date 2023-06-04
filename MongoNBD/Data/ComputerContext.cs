@@ -51,13 +51,13 @@ namespace MongoNBD.Data
          public async Task StoreImage(string id, Stream imageStream, string imageName)
         {
             var computers = await GetComputer(id);
-             if (computers.HasImage())
-            await gridFS.DeleteAsync(new ObjectId(computers.ImageId));
+          //   if (computers.Image())
+            await gridFS.DeleteAsync(new ObjectId(computers.Image));
             var imageId = await gridFS.UploadFromStreamAsync(imageName, imageStream);
-            computers.ImageId = imageId.ToString();
+            computers.Image = imageId.ToString();
 
             var filter = Builders<Computers>.Filter.Eq("_id", new ObjectId(computers.Id));
-            var update = Builders<Computers>.Update.Set("ImageId", computers.ImageId);
+            var update = Builders<Computers>.Update.Set("Image", computers.Image);
 
             await Computers.UpdateOneAsync(filter, update);
          }

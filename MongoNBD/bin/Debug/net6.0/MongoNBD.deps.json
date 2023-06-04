@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "MongoNBD/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "6.0.3",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.3",
           "Microsoft.AspNetCore.Identity.UI": "6.0.3",

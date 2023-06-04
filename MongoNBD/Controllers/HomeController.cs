@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -29,14 +30,21 @@ namespace MongoNBD.Controllers
          public IActionResult Create() => View();
 
          [HttpPost]
-         public async Task<IActionResult> Create(Computers computer)
+         public async Task<IActionResult> Create(Computers computer, IFormFile Image)
          {
-             if (ModelState.IsValid)
+			
+		
+			if (ModelState.IsValid)
              {
-await db.Create(computer);
+				MemoryStream stream = new MemoryStream();
+				Image.OpenReadStream().CopyTo(stream);
+				computer.Image = Convert.ToBase64String(stream.ToArray());
+				await db.Create(computer);
                  return RedirectToAction("Index");
              }
              return View(computer);
+
+         
          }
 
 
@@ -77,19 +85,21 @@ await db.Create(computer);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AttachImage(string id, IFormFile uploadedFile)
+        public async Task<IActionResult> AttachImage(Computers computer, IFormFile Image)
         {
-            if (uploadedFile != null)
-                await db.StoreImage(id, uploadedFile.OpenReadStream(), uploadedFile.FileName);
-            return RedirectToAction("Index");
+
+            if (ModelState.IsValid)
+            {
+                MemoryStream stream = new MemoryStream();
+                Image.OpenReadStream().CopyTo(stream);
+                computer.Image = Convert.ToBase64String(stream.ToArray());
+              
+                return RedirectToAction("Index");
+            }
+            return View(Image);
         }
 
-        public async Task<IActionResult> GetImage(string ImageId)
-        {
-            var image = await db.GetImage(ImageId);
-            if (image == null) return Error();
-            return File(image, "image/png");
-        }
+   
 
         public IActionResult Privacy()
          {

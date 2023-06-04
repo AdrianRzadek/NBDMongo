@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "AttachImage";
+}
+
+@model MongoNBD.Models.Computers
+
+<h2>Attach Image</h2>
+
+@using (Html.BeginForm())
+{
+    
+
+    <div>
+        <label for="uploadedFile">Image:</label>
+        <input type="file" name="ImageId" id="ImageId" accept="image/*" />
+    </div>
+    <div>
+        @Html.LabelFor(model=>model.ImageId)
+        <div>
+            @Html.EditorFor(model => model.ImageId)
+          
+        </div>
+    </div>
+
+    <input type="submit" value="Submit" />
+}

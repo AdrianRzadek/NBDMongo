@@ -65,6 +65,7 @@ await db.Create(computer);
             await db.Remove(id);
             return RedirectToAction("Index");
         }
+        [HttpGet]
 
         public async Task<IActionResult> AttachImage(string id)
         {
@@ -83,9 +84,9 @@ await db.Create(computer);
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> GetImage(string id)
+        public async Task<IActionResult> GetImage(string ImageId)
         {
-            var image = await db.GetImage(id);
+            var image = await db.GetImage(ImageId);
             if (image == null) return Error();
             return File(image, "image/png");
         }

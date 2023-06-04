@@ -23,6 +23,12 @@
 
             </div>
             <div class="form-group">
+                <label asp-for="ImageId" class="control-label"></label>
+                <input asp-for="ImageId" class="form-controll" />
+                <span asp-validation-for="ImageId" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
                 <input type="submit" value="create" class="btn btn-primary" />
             </div>
         </form>

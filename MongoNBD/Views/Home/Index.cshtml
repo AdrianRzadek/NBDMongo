@@ -32,9 +32,11 @@
         <tr>
             <td>@Html.DisplayFor(modelItem=>computer.Name)</td>
             <td>@Html.DisplayFor(modelItem=>computer.Year)</td>
+            <td>@Html.DisplayFor(modelItem=>computer.ImageId)</td>
             <td>@Html.ActionLink("Change","Edit", new{id=computer.Id})|
                 @Html.ActionLink("Delete","Delete", new{id=computer.Id})|
                 @Html.ActionLink("Add image","AttachImage", new{id=computer.Id})
+                
             
             
             
